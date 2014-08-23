@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp" >
+
+    <LinearLayout        
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingBottom="16dp"
+	    android:paddingLeft="16dp"
+	    android:paddingRight="16dp"
+	    android:paddingTop="16dp">
+        
+        
+	    <Button
+	        android:id="@+id/connect_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:text="Connect" 
+	        android:layout_weight="1"/>    
+	      
+	      <Button
+	        android:id="@+id/close"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:text="Close" 
+	        android:paddingTop="10dp"
+	        android:layout_weight="1"/>
+        
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/red_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red Intensity: 255" />
+        
+
+   <SeekBar
+        android:id="@+id/red_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:progress="254"
+        android:max="254" />   
+        
+    <TextView
+        android:id="@+id/blue_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue Intensity; 0" />
+           
+   <SeekBar
+        android:id="@+id/blue_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:progress="0"
+        android:max="254" />   
+        
+    <TextView
+        android:id="@+id/green_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green Intensity: 0" />
+    
+   <SeekBar
+        android:id="@+id/green_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:progress="0"
+        android:max="254" />   
+    
+
+</LinearLayout>
