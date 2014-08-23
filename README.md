@@ -9,10 +9,10 @@ https://www.youtube.com/watch?v=yCX6QGX9yBk&feature=youtu.be
 
 This repository contains three elements: 
 
-1.		Android code to set up a server socket and send RGB values to the client.  
-2.		A python script that sets up the client side socket on the computer to read in the RGB values  
-			and send them to an AVR micro-controller via USART serial communication.  
-3.		A C program written for an atmega328 that receives USART data in order to modulate PWM duty cycles and control and RGB LED.
+1.    Android code to set up a server socket and send RGB values to the client.  
+2.    A python script that sets up the client side socket on the computer to read in the RGB values  
+	and send them to an AVR micro-controller via USART serial communication.  
+3.    A C program written for an atmega328 that receives USART data in order to modulate PWM duty cycles and control and RGB LED.
 
 IT IS IMPORTANT THAT YOU READ THESE INSTRUCTIONS CAREFULLY  
 
@@ -33,8 +33,7 @@ ANDROID APP:
 2. Update the android manifest file with   
 
     <uses-permission android:name="android.permission.INTERNET"/> under the <manifest> tag.  
-	
-3. Upload the app to your device.  
+	 
 
 AVR Code:  
 The code was written and uploaded using AtmelStudio, however it should work in the Arduino IDE.  
@@ -46,8 +45,8 @@ PYTHON SCRIPT
 
 	"PATH_TO_ADB"/adb.exe forward tcp:38300 tcp:38300  
 	
-	This forwards a port on the computer to the device, allowing a socket communication to be set up on localhost.  
-	If at any time your device becomes unplugged, the above line must be executed again.  
+   This forwards a port on the computer to the device, allowing a socket communication to be set up on localhost.  
+   If at any time your device becomes unplugged, the above line must be executed again.  
 3. Make sure there are no open serial interfaces with the micro-controller/arduino.  
 4. Open the Android app, hit connect, and then run the python script.  
    A message should pop up on the app if the connection was successful, or if the connection timed out.  
