@@ -23,7 +23,7 @@ import android.widget.Toast;
  * 
  * This code was heavily borrowed from this website: http://www.florescu.org/archives/2010/10/15/android-usb-connection-to-pc/comment-page-1/
  * Thank you Alex Florescu.
- * s
+ * 
  * @author Zack 
  *
  */
